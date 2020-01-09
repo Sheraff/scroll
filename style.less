@@ -1,0 +1,43 @@
+body {
+    width : 100%;
+    overflow-x: hidden;
+    margin    : 0;
+}
+
+section {
+    height  : 480px;
+    margin  : 10px;
+    position: relative;
+
+    div {
+        background-color: slategrey;
+        height          : 100%;
+        width           : 720px;
+        position        : absolute;
+        top             : 0;
+    }
+
+    &:nth-child(even) {
+        div {
+            left: 0;
+        }
+    }
+
+    &:nth-child(odd) {
+        div {
+            right: 0;
+        }
+    }
+}
+
+a {
+    div {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        span {
+            color: blanchedalmond;
+        }
+    }
+}

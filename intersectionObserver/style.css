@@ -1,0 +1,15 @@
+section div {
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+section:nth-child(even) div {
+  transform: translateX(-100%);
+}
+section:nth-child(odd) div {
+  transform: translateX(100%);
+}
+section.visible div {
+  transform: none;
+  opacity: 1;
+}

@@ -1,0 +1,27 @@
+section {
+
+	div {
+		transition-property: transform, opacity;
+		transition-duration: .3s;
+		opacity            : 0;
+	}
+
+	&:nth-child(even) {
+		div {
+			transform: translateX(-100%);
+		}
+	}
+
+	&:nth-child(odd) {
+		div {
+			transform: translateX(100%);
+		}
+	}
+
+	&.visible {
+		div {
+			transform: none;
+			opacity  : 1;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+section {
+  height: 480px;
+  margin: 10px;
+  position: relative;
+}
+section div {
+  background-color: slategrey;
+  height: 100%;
+  width: 720px;
+  position: absolute;
+  top: 0;
+}
+section:nth-child(even) div {
+  left: 0;
+}
+section:nth-child(odd) div {
+  right: 0;
+}
+a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a div span {
+  color: blanchedalmond;
+}
